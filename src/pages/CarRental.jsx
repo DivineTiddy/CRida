@@ -1,8 +1,10 @@
 
 const CarRental = () => {
   return (
+
     <div>
-    hello  sunny
+      <img src="" alt="" />
+      
     </div>
   )
 }
