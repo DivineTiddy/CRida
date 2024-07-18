@@ -1,4 +1,3 @@
-import Nav from "../NavComp/Nav";
 import "./Herro.css";
 
 const Herro = () => {
