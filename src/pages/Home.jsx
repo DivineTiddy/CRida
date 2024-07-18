@@ -1,8 +1,9 @@
+import Herro from "../components/HerroSection/Herro"
 
 const Home = () => {
   return (
     <div>
-      hello
+      <Herro/>
     </div>
   )
 }
