@@ -1,10 +1,10 @@
+import Rentals from '../components/carRental/Rentals'
 
 const CarRental = () => {
   return (
 
     <div>
-      <img src="" alt="" />
-      
+      <Rentals/>
     </div>
   )
 }
