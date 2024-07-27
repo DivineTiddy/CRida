@@ -1,0 +1,32 @@
+.countContainer{
+    width: 1030px;
+    height: 131px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    background-color: #f5f5f5;
+    margin-top: -40px;
+    position: relative;
+}
+.countContainer li{
+    width: 219.5px;
+    height: 71px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.countContainer li h2{
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+    line-height: 44px;
+    color: rgba(7, 1, 37, 1);
+}
+.countContainer li p{
+    font-size: 20px;
+    margin: 0;
+    line-height: 27px;
+    color: rgba(54, 50, 71, 1);
+}

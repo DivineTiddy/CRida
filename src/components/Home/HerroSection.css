@@ -1,0 +1,92 @@
+.herroSection{
+    width: 100%;
+    height: 689px;
+    display: flex;
+}
+.herroText{
+    width: 50%;
+    height: inherit;
+}
+.herroContent{
+    position: relative;
+    width: 720px;
+    height: 689px;
+    background-color: rgba(7, 1, 37, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentContainer{
+    width: 525px;
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-1{
+    width: 100%;
+    height: 171px;
+}
+.content-1 div p{
+    font-size: 24px;
+    color: rgba(245, 245, 245, 1);
+    margin: 0;
+}
+.content-1 div{
+    height: 33px;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+.feel{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 65px;
+    margin: 0;
+    color: rgba(245, 245, 245, 1);
+}
+.content-2{
+    height: 128px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-2 p{
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(147, 146, 148, 1);
+    margin: 0;
+    width: 473px;
+}
+.herroBg{
+    position: absolute;
+    width: 700px;
+    height: inherit;
+}
+.herroPhoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+.playIcon{
+    position: absolute;
+    background-color: rgba(7, 1, 37, 0.4);
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* HERRO BACKGROUND PHOTO CSS */
+.bgPhoto{
+    position: relative;
+}
+/* ABOUT US PHOTO CSS */
+.about_us_photo{
+    margin-top: -30px;
+    margin-left: -20px;
+    border-radius: 5px;
+}

@@ -1,7 +1,8 @@
 import "./Nav.css"
 const Nav = () => {
   return (
-    <nav>
+    <section className="navSection">
+      <nav>
         <p>CRida</p>
         <ul>
             <li>Home</li>
@@ -17,6 +18,7 @@ const Nav = () => {
 
         </div>
     </nav>
+    </section>
   )
 }
 
