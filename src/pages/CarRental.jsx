@@ -1,8 +1,10 @@
+import Rentals from '../components/carRental/Rentals'
 
 const CarRental = () => {
   return (
+
     <div>
-    hello  sunny
+      <Rentals/>
     </div>
   )
 }
