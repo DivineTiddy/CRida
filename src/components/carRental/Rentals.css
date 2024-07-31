@@ -51,7 +51,7 @@
 }
 .search--bar{
     display: flex;
-    width: 1240px;
+    width: 910px;
     background-color: var(--bg);
     height: 50px;
     padding: 0.6rem;
