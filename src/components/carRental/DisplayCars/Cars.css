@@ -10,7 +10,7 @@ font-weight: 700;
 }
 .car--flexs{
     width: 1240px;
-    height: 612px;
+    height: auto;
     background-color: inherit;
     display: flex;
     margin: 0 auto;
@@ -94,6 +94,17 @@ font-weight: 700;
 
     /*Pagination*/
     .pagination--container{
-        width: 100%;
+        width: 910px;
+        display: flex;
+        justify-content: space-between;
         height: 32px;
+    }
+    .frame--1{
+        display: flex;
+        width: fit-content;
+    }
+
+    .pages--pagination{
+        width: 100%;
+        text-align: right;
     }

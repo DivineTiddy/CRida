@@ -1,12 +1,14 @@
 import  './Rentals.css';
 import Cars from './DisplayCars/Cars';
+import Freq from './Freq';
 function Rentals() {
   return (
-    <>
+    <div className='rental'>
    <HeroSection/>
    <SearchBar/>
    <Cars/>
-    </>
+   <Freq/>
+    </div>
   )
 }
  function HeroSection(){
@@ -44,5 +46,6 @@ return(
 </section>
 )
 }
+
 
 export default Rentals
