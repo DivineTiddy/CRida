@@ -9,19 +9,20 @@
 }
 .herroContent{
     position: relative;
-    width: 720px;
-    height: 689px;
+    width: 100%;
+    height: auto;
     background-color: rgba(7, 1, 37, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contentContainer{
-    width: 525px;
+    width: auto;
     height: 331px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid black;
 }
 .content-1{
     width: 100%;

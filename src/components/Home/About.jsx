@@ -1,12 +1,10 @@
 import "./About.css";
-import AboutPhoto from "./AboutPhoto";
 const About = () => {
   return (
-    <div className="about">
-      <section className="aboutPhoto">
-        <AboutPhoto/>
+    <div className="about border-solid border-2 border-sky-800">
+      <section className="w-[50%] border-solid border-2 border-sky-800">
       </section>
-      <section className="aboutContent">
+      <section className="aboutContent border-solid border-2 border-sky-800">
         <div>
           <section>
             <div className="aboutIcon">

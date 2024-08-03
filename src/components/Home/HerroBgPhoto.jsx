@@ -1,7 +1,7 @@
 
 const HerroBgPhoto = () => {
   return (
-    <svg width="720" height="689" viewBox="0 0 720 689" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+    <svg width="100%" height="689" viewBox="0 0 720 689" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
 <rect width="1156" height="795" transform="matrix(-1 0 0 1 1091 -60)" fill="url(#pattern0_4133_147)"/>
 <defs>
 <pattern id="pattern0_4133_147" patternContentUnits="objectBoundingBox" width="1" height="1">
