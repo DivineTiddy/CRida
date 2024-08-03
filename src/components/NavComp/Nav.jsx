@@ -15,7 +15,6 @@ const Nav = () => {
         <div className="nav_button_container">
             <button>Sign In</button>
             <button className="sign_up">Sign Up</button>
-
         </div>
     </nav>
     </section>
