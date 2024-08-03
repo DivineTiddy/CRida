@@ -21,6 +21,7 @@
     font-size: var(--h1);
     font-weight: 500;
     text-align: center;
+    font-weight: 700;
 }
   h3{
     color:var(--text-colour);
@@ -51,7 +52,7 @@
 }
 .search--bar{
     display: flex;
-    width: 910px;
+    width: 68.3%;
     background-color: var(--bg);
     height: 50px;
     padding: 0.6rem;
@@ -74,7 +75,6 @@
     left: 8%;
 }
 .search input{
-    width: 558px;
     height: 41px;
     margin: 0 1rem 0 0;
     border: none;
@@ -82,7 +82,6 @@
     font-weight: 100;
     text-indent: 5rem;
     color: var(--text-colour);
-    font-size: var(--crida-car-name-font-size);
 }
 .car--rentail--button{
     width: 189px;
@@ -98,8 +97,8 @@
 /*Pagination*/
 
 .section--4{
-    width: 910px;
-    height: 513px;
+    width: 83%;
+    height: auto;
     margin: 0 auto;
     background-color: inherit;
 }
@@ -108,6 +107,7 @@
     width: 100%;
     height: 43px;
     display: flex;
+    padding: 2rem 0;
     border-bottom: 1px solid var(--gray) ;
     justify-content: space-between;
     cursor: pointer;
@@ -117,4 +117,29 @@
 .question--h3{
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+
+@media screen and (max-width:771px){
+    .section--1{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:537px){
+    .search--bar{
+       width: 100%;
+    }
+    .title--heading{
+        font-size: 1.1rem;
+    }
+    .question--h3{
+        font-size: 0.98rem;
+    }
+    .search--bar h3{
+        font-size: 15px
+    }
+    .section--1{
+        height: 300px;
+    }
 }

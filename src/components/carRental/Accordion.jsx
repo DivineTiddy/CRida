@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const faq = [
+const freq = [
     {
         id:1,
         question:"Can I get my Car delivered to me?",
@@ -33,7 +33,7 @@ const faq = [
     },
 ]
 
-function Freq(){
+function Accordion(){
     const [selectedId, setselectedId] = useState(null);
 
     function handClickQuestion(id){
@@ -42,20 +42,20 @@ function Freq(){
     return(
       <section className="section section--4">
       <h1 className='title--heading'>Frequently Asked Questions</h1>
-      {faq.map((faq) => (<div className="each--section" key={faq.id}>
-      <div className="freq--question" onClick={() =>handClickQuestion(faq.id)}>
-        <h3 className="question--h3">{faq.question}</h3>
+      {freq.map((freq) => (<div className="each--section" key={freq.id}>
+      <div className="freq--question" onClick={() =>handClickQuestion(freq.id)}>
+        <h3 className="question--h3">{freq.question}</h3>
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M20.8125 8.09375L12 16.9061" stroke="#939294" stroke-miterlimit="10" stroke-linecap="square"/>
         <path d="M12 16.9061L3.1875 8.09375" stroke="#939294" stroke-miterlimit="10" stroke-linecap="square"/>
         </svg>
       </div>
-      <div className={faq.id === selectedId ? 'freq-answer' : ""}>
-        {faq.id === selectedId ? faq.answer : null }
+      <div className={freq.id === selectedId ? 'freq-answer' : ""}>
+        {freq.id === selectedId ? freq.answer : null }
       </div>
       </div>))}
     </section> 
     )
   }
 
-export default Freq
+export default Accordion

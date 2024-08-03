@@ -1,0 +1,110 @@
+:root{
+    --h1:1.5rem;
+    --crida-icon-text:0.8rem;
+  --crida-car-name-font-size:1.33rem;
+   --bg:#fff;
+   --primaryColor:#070125;
+   --accent-colour:#BF5B12;
+   --accent-colour-two:FAA037;
+   --secondaryColor:#3E54C7;
+   --secondSecondaryColor:#AFB6DE;
+   --gray:#939294;
+   --gray2:#54697E;
+   --text-colour:#363247;
+   --light-gray:969696;
+  --success:#0FA96C;
+  --warning:#F44439;
+  --accent-three:#5810BF;
+  --Body-text-color:504F53;
+  }
+.footer{
+    background-color: var(--primaryColor);
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 2rem 0;
+    flex-direction: column;
+    color: #fff;
+}
+.footer h3{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer--section1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 3rem 0;
+    flex-direction: column;
+}
+.review--section{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.about--section{
+    width: 230px;
+    height: auto;
+    text-align:left;
+}
+.unorder--list{
+    width: 250px;
+    height: auto;
+    text-align:left;
+}
+.contact--us--section{
+    width: 250px;
+}
+.links{
+    display: flex;
+    align-items: center;;
+    margin: 0.7rem;
+}
+.links p{
+    margin: 0 1rem;
+
+}
+.social--media--section{
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.social--icons{
+    display: flex;
+    margin: 0.4rem 0;
+}
+.each--social--icons{
+margin: 0 0.3rem;
+background: #fff;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+.footer--section2{
+    width: 100%;
+    border-top: 1px solid var(--gray);
+}
+
+.footer--section2 p{
+    padding: 0 2rem;
+}
+
+@media screen and (max-width:670px){
+    .about--section, .rental--cars--section{
+        display: none;
+    }
+}
+@media screen and (max-width:453px){
+    .review--section{
+        flex-direction: column;
+    }
+    .footer h3{
+        font-size: 0.98rem;
+    }
+    .contact--us--section {
+        margin: 0.5rem 0.5rem;
+      }
+}
