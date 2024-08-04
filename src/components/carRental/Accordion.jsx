@@ -37,7 +37,7 @@ function Accordion(){
     const [selectedId, setselectedId] = useState(null);
 
     function handClickQuestion(id){
-        setselectedId(id !== selectedId ? id : null)
+        setselectedId(id !== selectedId ? id : null);
     }
     return(
       <section className="section section--4">

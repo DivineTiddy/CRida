@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import CarRental from "./pages/CarRental";
 import Nav from "./components/NavComp/Nav";
 import Footer from "./components/FooterComponent/Footer";
-import CarSale from "./components/CarSales/CarSale";
+import CarSales from "./pages/CarSales";
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/rental" element={<CarRental/>}></Route>
-        <Route path="/car/sales" element={<CarSale/>}></Route>
+        <Route path="/carsales" element={<CarSales/>}></Route>
       </Routes>
       <Footer/>
     </BrowserRouter>
