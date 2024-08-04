@@ -8,6 +8,7 @@
     width: 50%;
     height: inherit;
     border: 1px solid black;
+
 }
 .chooseCategories{
     margin: 0;
@@ -15,20 +16,18 @@
     width: 50%;
     list-style: none;
     height: inherit;
-    border: 1px solid black;
     display: grid;
     grid-template-columns: auto auto ;
     justify-content: space-around;
-    align-items: center;
 
 }
 .chooseCategories li{
-    width: 295px;
-    height: 138px;
-    border: 1px solid black;
+    width: 90%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 
 }
 .chooseCategories li span {
@@ -50,20 +49,15 @@
 .choosePhoto{
     width: 100%;
     height: 515px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
-}
-.choosePhoto div{
-    width: 420px;
-    height: inherit ;
-    border: 1px solid black;
-
 }
 .choosePhoto div section{
     height: 138px;
     width: 100%;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     
 }

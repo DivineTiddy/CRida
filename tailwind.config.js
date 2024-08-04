@@ -5,7 +5,13 @@ export default {
     extend: {
       colors: {
         Accent: "rgba(191, 91, 18, 1)",
+        Bg: "rgba(7, 1, 37, 0.9)",
+        Text: "#363247",
+        Button: "#5810BF"
       },
+      border:{
+        Con:"border-solid border-2 border-sky-950"
+      }
     },
   },
   plugins: [],

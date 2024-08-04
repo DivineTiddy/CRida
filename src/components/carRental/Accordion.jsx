@@ -46,8 +46,8 @@ function Accordion(){
       <div className="freq--question" onClick={() =>handClickQuestion(freq.id)}>
         <h3 className="question--h3">{freq.question}</h3>
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20.8125 8.09375L12 16.9061" stroke="#939294" stroke-miterlimit="10" stroke-linecap="square"/>
-        <path d="M12 16.9061L3.1875 8.09375" stroke="#939294" stroke-miterlimit="10" stroke-linecap="square"/>
+        <path d="M20.8125 8.09375L12 16.9061" stroke="#939294" strokeMiterlimit="10" strokeLinecap="square"/>
+        <path d="M12 16.9061L3.1875 8.09375" stroke="#939294" strokeMiterlimit="10" strokeLinecap="square"/>
         </svg>
       </div>
       <div className={freq.id === selectedId ? 'freq-answer' : ""}>

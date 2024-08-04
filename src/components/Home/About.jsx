@@ -1,12 +1,15 @@
+import aboutPhoto from "./image/image 40.jpg"
+
 import "./About.css";
-import AboutPhoto from "./AboutPhoto";
 const About = () => {
   return (
-    <div className="about">
-      <section className="aboutPhoto">
-        <AboutPhoto/>
+    <div className="about ">
+      <section className="flex justify-center items-center w-[50%] ">
+        <div className="w-[493px] h-[450px] border-solid border-[6px] rounded-[8px] border-[#070125]">
+          <img src={aboutPhoto} className="w-[492px] h-[450px] rounded-[4px] ml-[-20px] mt-[-20px]"/>
+        </div>
       </section>
-      <section className="aboutContent">
+      <section className="aboutContent ">
         <div>
           <section>
             <div className="aboutIcon">
