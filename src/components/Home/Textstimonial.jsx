@@ -2,7 +2,7 @@ import Comments from "./Comments";
 
 const Textstimonial = () => {
   return (
-    <div className="w-[90%] h-auto flex flex-col justify-between items-center ">
+    <div className="w-[90%] h-auto flex flex-col justify-between items-center max-[900px]:w-[95%]  max-[800px]:w-[98%]">
       <section className="flex flex-col justify-between items-center w-[549px] h-[128px] ">
         <p className="text-Accent">TESTIMONIAL</p>
         <p className="font-bold text-[32px] leading-[44px] text-[#070125]">

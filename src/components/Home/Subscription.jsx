@@ -2,7 +2,7 @@ import emailPhoto from "./image/image 129.jpg"
 
 const Subscription = () => {
   return (
-    <div className="flex flex-col justify-around items-center bg-[#CBC3F3] h-[462px] w-[70%] ">
+    <div className="flex flex-col justify-around items-center bg-[#CBC3F3] h-[462px] w-[70%] max-[900px]:w-[85%]">
         <p className="w-[90%] text-[#070125] font-bold text-[32px] leadding-[44px]">Subscribe for exclusive offers and deals!</p>
         <section className="flex flex-col justify-between items-end  w-full h-[278px] ">
             <div className="w-[135px] h-[132px] ">

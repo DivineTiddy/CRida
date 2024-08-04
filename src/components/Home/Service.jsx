@@ -37,7 +37,7 @@ const Service = () => {
           </section>
         </div>
       </div>
-      <ul className="mt-[-70px] w-[80%] h-auto relative flex justify-between">
+      <ul className="mt-[-70px] w-[80%] h-auto relative flex justify-between max-[900px]:w-[95%]">
         <li className="bg-[#F5F5F5]    h-auto w-[24%] flex items-center flex-col">
           <div className="text-[24px] text-[#F5F5F5] font-bold h-[49px] flex justify-center items-center bg-[#5810BF] w-[100%]">
             Car Rentals
