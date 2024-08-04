@@ -4,9 +4,9 @@ import "./Choose.css";
 const Choose = () => {
   return (
     <>
-    <section className=" flex w-[90%] h-auto ">
-      <div className="flex justify-center w-[50%] h-[100%] ">
-        <section className="flex flex-col justify-between w-[70%] h-[515px] ">
+    <section className=" flex w-[90%] h-auto max-[900px]:w-[95%] max-[700px]:flex-col">
+      <div className="flex justify-center w-[50%] h-[100%] max-[700px]:w-[100%]">
+        <section className="flex flex-col justify-between w-[70%] h-[515px] max-[900px]:w-[85%] ">
           <div className="w-[100%]   h-auto ">
             <section className="flex items-center w-[100%] h-auto ">
               <svg
@@ -33,8 +33,8 @@ const Choose = () => {
       {
         // first section
       }
-      <div className="flex w-[50%] h-auto ">
-        <section className="flex flex-col justify-between w-[50%] h-[100%] ">
+      <div className="flex w-[50%] h-auto max-[700px]:mt-[100px]  max-[700px]:w-[100%] border-solid border-2 border-sky-800">
+        <section className="flex flex-col justify-between w-[50%] h-[100%]  max-[700px]:h-[450px]">
           <div className="w-[100%] h-auto ">
             <section className="flex items-center w-[100%] h-auto">
               <svg

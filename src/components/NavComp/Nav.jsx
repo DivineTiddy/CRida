@@ -1,7 +1,7 @@
 import "./Nav.css"
 const Nav = () => {
   return (
-    <section className="navSection">
+    <section className="navSection max-[884px]:hidden">
       <nav>
         <p>CRida</p>
         <ul>

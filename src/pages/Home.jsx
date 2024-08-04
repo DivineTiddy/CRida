@@ -20,7 +20,7 @@ const Home = () => {
       <About/> 
       <Choose/>
       <Service/>
-      <EXplore/> 
+      <EXplore /> 
       <Location/>
       <Subscription/>  
       <Textstimonial/>

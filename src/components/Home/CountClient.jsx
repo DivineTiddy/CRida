@@ -2,7 +2,7 @@ import "./CountClient.css"
 
 const CountClient = () => {
   return (
-    <ul className="countContainer">
+    <ul className="countContainer max-[700px]:w-[95%]">
         <li>
             <h2>150+</h2>
             <p>Cars</p>
@@ -17,7 +17,7 @@ const CountClient = () => {
         </li>
         <li>
             <h2>50+</h2>
-            <p>Professional drivers</p>
+            <p className="max-[700px]:text-center">Professional drivers</p>
         </li>
 
     </ul>
