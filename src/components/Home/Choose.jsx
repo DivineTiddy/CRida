@@ -1,11 +1,13 @@
+import chooseImage from "./image/image 107.jpg"
+
 import "./Choose.css";
 const Choose = () => {
   return (
     <>
-    <section className=" flex w-[90%] h-auto border-solid border-2 border-sky-800">
+    <section className=" flex w-[90%] h-auto ">
       <div className="flex justify-center w-[50%] h-[100%] ">
         <section className="flex flex-col justify-between w-[70%] h-[515px] ">
-          <div className="w-[100%] h-auto ">
+          <div className="w-[100%]   h-auto ">
             <section className="flex items-center w-[100%] h-auto ">
               <svg
                 width="60"
@@ -23,9 +25,9 @@ const Choose = () => {
               affordability. Experience top-notch service with every ride.
             </p>
           </div>
-          <div className="w-[100%] h-[353px] ">
-            <div className="bg-Bg w-[90%] h-[332px] "></div>
-          </div>
+            <div className="rounded-[4px] bg-Bg w-[90%] h-[332px] ">
+              <img className="rounded-[4px] w-[390px] h-[332px] mb-[-20px]  m-[20px]" src={chooseImage} />
+            </div>
         </section>
       </div>
       {
@@ -186,11 +188,7 @@ const Choose = () => {
     {
       ///.....................................
     }
-   <section className="w-[100%]">
-   <svg width="149" height="108" viewBox="0 0 149 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M77.5 55L0 0V108H149L77.5 55Z" fill="#070125"/>
-    </svg>
-   </section>
+  
     </>
     
   );

@@ -2,7 +2,18 @@ import ServicePhoto from "./image/ServicePhoto";
 
 const Service = () => {
   return (
-    <>
+    <div className="w-[100%] h-auto flex flex-col items-center">
+      <section className="w-[100%] ">
+        <svg
+          width="149"
+          height="108"
+          viewBox="0 0 149 108"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M77.5 55L0 0V108H149L77.5 55Z" fill="#070125" />
+        </svg>
+      </section>
       <div className="w-full  h-[362px] flex flex-col items-center ">
         <ServicePhoto />
         <div className="relative bg-Bg w-[100%] h-[100%] flex justify-center items-center">
@@ -26,7 +37,7 @@ const Service = () => {
           </section>
         </div>
       </div>
-      <ul className="mt-[-80px] w-[80%] h-auto relative flex justify-between">
+      <ul className="mt-[-70px] w-[80%] h-auto relative flex justify-between">
         <li className="bg-[#F5F5F5]    h-auto w-[24%] flex items-center flex-col">
           <div className="text-[24px] text-[#F5F5F5] font-bold h-[49px] flex justify-center items-center bg-[#5810BF] w-[100%]">
             Car Rentals
@@ -68,7 +79,7 @@ const Service = () => {
           </p>
         </li>
       </ul>
-    </>
+      </div>
   );
 };
 

@@ -4,7 +4,6 @@
     display: flex;
     justify-content: 
     space-around;
-    margin: 100px 0px;
 }
 .aboutPhoto{
     width: 50%;
@@ -31,8 +30,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid black;
-
 }
 .aboutIcon{
     height: 33px !important;
@@ -52,7 +49,6 @@
     font-size: 20px;
     margin: 0px;
     line-height: 27px;
-    border: 1px solid black;
     margin-bottom: 30px;
 
 }
