@@ -98,6 +98,7 @@ font-weight: 700;
         display: flex;
         justify-content: space-between;
         height: 32px;
+        margin: 0 auto;
     }
     .frame--1{
         display: flex;

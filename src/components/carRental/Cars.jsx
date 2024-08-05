@@ -1,24 +1,23 @@
 import './Cars.css';
-import Image132 from '../images/image132.png';
-import Image162 from '../images/image 162.png';
-import Image178 from '../images/image 178.png';
-import Image165 from '../images/image 165.png';
-import Image166 from '../images/image 166.png';
-import Image171 from '../images/image 171.png';
-import Image175 from '../images/image 175.png';
-import Image163 from '../images/image 163.png';
-import Image169 from '../images/image 169.png';
-import Image167 from '../images/image 167.png';
-import Image179 from '../images/image 179.png';
-import Image184 from '../images/image 184.png';
-
+import Image132 from './images/image132.png';
+import Image162 from './images/image 162.png';
+import Image178 from './images/image 178.png';
+import Image165 from './images/image 165.png';
+import Image166 from './images/image 166.png';
+import Image171 from './images/image 171.png';
+import Image175 from './images/image 175.png';
+import Image163 from './images/image 163.png';
+import Image169 from './images/image 169.png';
+import Image167 from './images/image 167.png';
+import Image179 from './images/image 179.png';
+import Image184 from './images/image 184.png';
 
 
 const carsData = [
   {
     id: 1,
     name: "Toyota Camry 2021",
-    price: "₦190,000.00/day",
+    price: 19000000,
     image: Image132,
     passengers: 5,
     doors: 4,
@@ -28,7 +27,7 @@ const carsData = [
   {
     id: 2,
     name: "BMW 2021",
-    price: "₦220,000.00/ day",
+    price: 22000000,
     image: Image162,
     passengers: 4,
     doors: 3,
@@ -38,7 +37,7 @@ const carsData = [
   {
     id: 3,
     name: "Lexus RX 350  2023",
-    price: "₦210,000.00/ day",
+    price: 21000000,
     image: Image178,
     passengers: 5,
     doors: 3,
@@ -48,7 +47,7 @@ const carsData = [
   {
     id: 4,
     name: "Honda Accord 2018",
-    price: "₦230,000.00/ day",
+    price: 23000000,
     image: Image165,
     passengers: 5,
     doors: 4,
@@ -58,7 +57,7 @@ const carsData = [
   {
     id: 5,
     name: "Merce. Benz V Cl 2020",
-    price: "₦250,000.00/ day",
+    price: 25000000,
     image: Image166,
     passengers: 7,
     doors: 3,
@@ -68,7 +67,7 @@ const carsData = [
   {
     id: 6,
     name: "Accura ILX 2020",
-    price: "₦250,000.00/ day",
+    price: 25000000,
     image: Image171,
     passengers: 5,
     doors: 4,
@@ -78,7 +77,7 @@ const carsData = [
   {
     id: 7,
     name: "Toyota Tundra 2021",
-    price: "₦220,000.00/ day",
+    price: 22000000,
     image: Image175,
     passengers: 5,
     doors: 4,
@@ -88,7 +87,7 @@ const carsData = [
   {
     id: 8,
     name: "Toyota Hiace 2020",
-    price: "₦350,000.00/ day",
+    price: 35000000,
     image:Image163,
     passengers: 15,
     doors: 8,
@@ -98,7 +97,7 @@ const carsData = [
   {
     id: 9,
     name: "Dodge Charger 2023",
-    price: "₦200,000.00/ day",
+    price: 20000000,
     image: Image169,
     passengers: 5,
     doors: 4,
@@ -108,7 +107,7 @@ const carsData = [
   {
     id: 10,
     name: "Toyota Coaster 2023",
-    price: "₦500,000.00/ day",
+    price: 50000000,
     image: Image167,
     passengers: 30,
     doors: 15,
@@ -118,7 +117,7 @@ const carsData = [
   {
     id: 11,
     name: "Lexus RX 350 2023",
-    price: "₦210,000.00/ day",
+    price: 21000000,
     image: Image179,
     passengers: 5,
     doors: 3,
@@ -128,7 +127,7 @@ const carsData = [
   {
     id: 12,
     name: "Toyota Avalon 2019",
-    price: "₦195,000.00/ day",
+    price: 19500000,
     image: Image184,
     passengers: 5,
     doors: 3,
@@ -137,12 +136,13 @@ const carsData = [
   },
 ];
 
-function cars() {
+function cars({prices}) {
+  const filterPrice = prices === '' ? carsData : carsData.filter((car) => car.price === prices);
   return (
     <section className="section section--3">
     <div className="car--flexs">
-      {
-        carsData.map((car) => (
+      { filterPrice.length === 0 ? (<span>Price of car is not available at the moment, check back later</span>) :(
+        filterPrice.map((car) => (
 <div className="each--cars" key={car.id}>
         <div className="car--image">
           <div className="scroll--icon">
@@ -179,7 +179,10 @@ function cars() {
             <div className="car--summary">
               <div className="name--price">
                   <h3>{car.name}</h3>
-                  <h4>{car.price}</h4>
+                  <h4>{`₦${new Intl.NumberFormat('en-NG', {
+                      // style: 'currency',
+                      // currency: 'NGN',
+                    }).format(car.price)}/ day`}</h4>
               </div>
               <div className="summary--icons">
               <div className="summary">
@@ -236,10 +239,10 @@ function cars() {
           <button className='car--rentail--button' style={{margin:'0.5rem'}}>Book now</button>
         </div>
       </div>
-        ))
+         )))
       }
-   <Pagination/>
     </div>
+   <Pagination/>
   </section>
   )
 }

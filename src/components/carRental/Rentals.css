@@ -77,12 +77,20 @@
 .search input{
     height: 41px;
     margin: 0 1rem 0 0;
+    width: 10rem;
     border: none;
     outline: none;
-    font-weight: 100;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
     text-indent: 5rem;
     color: var(--text-colour);
 }
+input::placeholder {
+    color: #000000; /* Change the color */
+    font-weight: 700;
+  }
+  
 .car--rentail--button{
     width: 189px;
     background-color: var(--accent-three);
