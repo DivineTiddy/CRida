@@ -179,10 +179,7 @@ function cars({prices}) {
             <div className="car--summary">
               <div className="name--price">
                   <h3>{car.name}</h3>
-                  <h4>{`₦${new Intl.NumberFormat('en-NG', {
-                      // style: 'currency',
-                      // currency: 'NGN',
-                    }).format(car.price)}/ day`}</h4>
+                  <h4>{`₦${new Intl.NumberFormat('en-NG').format((car.price / 100).toFixed(1))}.00 / day`}</h4>
               </div>
               <div className="summary--icons">
               <div className="summary">
